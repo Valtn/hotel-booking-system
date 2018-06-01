@@ -1,0 +1,37 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+INSERT INTO guests (guest_id, first_name, last_name, phone, email, address, city, province, country, postal_code, notes) VALUES
+(1, 'Michael', 'Simmons', '+12223334444', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(2, 'William', 'Jackson', '+12345678901', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(3, 'Sandra', 'Russell', '+12123234334', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(4, 'Patrick', 'Roberts', '+10001110000', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'Rebecca', 'Young', '+19992227777', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+INSERT INTO rooms (room_number) VALUES
+(100),
+(101),
+(102),
+(103),
+(104),
+(105);
+
+INSERT INTO bookings (booking_id, guest_id, reservation_date, check_in, check_out) VALUES
+(1, 1, '2018-06-01 18:46:05', '2018-06-01 18:46:04', '2018-06-09 18:46:04'),
+(2, 3, '2018-06-01 18:46:22', '2018-06-08 18:46:22', '2018-06-16 18:46:22'),
+(3, 4, '2018-06-01 18:46:43', '2018-06-01 18:46:43', '2018-06-16 18:46:43');
+
+INSERT INTO booking_rooms (booking_id, room_number) VALUES
+(1, 100),
+(2, 101),
+(2, 102),
+(3, 103);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
