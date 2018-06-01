@@ -48,7 +48,7 @@ function getGuests($firstName, $lastName, $phone, $email) {
             $guest->province = ($row['province'] != null ? $row['province'] : '');
             $guest->country = ($row['country'] != null ? $row['country'] : '');
             $guest->postalCode = ($row['postal_code'] != null ? $row['postal_code'] : '');
-            $guest->notes = $row['notes'];
+            $guest->notes = ($row['notes'] != null ? $row['notes'] : '');
             array_push($json->guests, $guest);
         }
     } else {

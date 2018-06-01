@@ -233,8 +233,8 @@
                             historyBookingsTableBody.append(tr);
                         }
 
-                        displayStep(3)
                     }
+                    displayStep(3);
 
                 }, null, document.getElementById("step2"));
             }
