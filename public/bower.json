@@ -1,0 +1,24 @@
+{
+  "name": "hotel-booking-system",
+  "authors": [
+    "Valtn <Valtn@users.noreply.github.com>"
+  ],
+  "description": "Hotel Booking System",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "admin-lte": "adminlte#2.4.3",
+    "bootstrap": "3.3.7",
+    "jquery": "3.3.1",
+    "chart.js": "^2.7.2"
+  }
+}
